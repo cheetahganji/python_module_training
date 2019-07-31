@@ -1,6 +1,6 @@
 """re 모듈 실습
 
-공식 문서 : 
+공식 문서 : https://docs.python.org/3/library/re.html#
 """
 import re
 
@@ -16,3 +16,19 @@ if __name__ == "__main__":
 
     rst = p.findall(text)   # 모든 결과를 문자열형태로 리스트 반환
     print(rst)              # ['010', '098', '372', '010', '123', '567']
+
+    p = re.compile(r'\d+-\d+')        
+    rst = p.findall(text)       # ['010-0981', '010-1234']
+    print(rst)
+
+    p = re.compile(r'(\d+)-\d+')        
+    rst = p.findall(text)       # ['010', '010'] 그루핑된 것만 리턴되는 듯
+    print(rst)
+
+    p = re.compile(r'(\d+)-(\d+)')  
+    rst = p.search(text)
+    print(rst.group())  # 010-0981
+    print(rst.group(1)) # 010
+    print(rst.group(2)) # 0981
+
+
