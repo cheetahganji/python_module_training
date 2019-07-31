@@ -5,6 +5,11 @@
 import collections
 
 if __name__ == "__main__":
+    
+    '''
+    Counter 클래스 
+    '''
+    
     ls = ['김', '이', '박', '강', '김', '강', '이']
 
     # 리스트를 넣으면, 요소별로 counting
