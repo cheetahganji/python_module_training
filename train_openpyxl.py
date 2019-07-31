@@ -118,7 +118,7 @@ ws = xl.active
 # ws.protection.enable()  # 시트보호 설정
 # ws.protection.disable() # 시트보호 해제
 
-ws.protection.password = '123'    # 시트보호 설정하고 해제할때 필요한 암호 거는 듯?
+# ws.protection.password = '123'    # 시트보호 설정하고 해제할때 필요한 암호/ 위의 스크립트 안쓰고 이 스크립트 만으로도 시트보호 설정 가능
 
 
 # if not os.path.exists('openpyxl_test.xlsx'):
